@@ -16,4 +16,7 @@
 
 @property (strong, nonatomic) ViewController *viewController;
 
++(void)setSettingsBundleDefaultsForFile:(NSString*)plistFileName;
++(void)setSettingsBundleDefaults;
+
 @end

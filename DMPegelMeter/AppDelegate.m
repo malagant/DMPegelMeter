@@ -6,19 +6,70 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import <RestKit/RKObjectManager.h>
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "PegelMessung.h"
+#import "RKXMLParserLibXML.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 
++ (void)setSettingsBundleDefaults {
+    [AppDelegate setSettingsBundleDefaultsForFile:@"Root.plist"];
+}
+
++ (void)setSettingsBundleDefaultsForFile:(NSString *)plistFileName {
+    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+
+    //bundle path
+    NSString *bPath = [[NSBundle mainBundle] bundlePath];
+    NSString *settingsPath = [bPath stringByAppendingPathComponent:@"Settings.bundle"];
+    NSString *plistFile = [settingsPath stringByAppendingPathComponent:plistFileName];
+
+    //preferences
+    NSDictionary *settingsDictionary = [NSDictionary dictionaryWithContentsOfFile:plistFile];
+    NSArray *preferencesArray = [settingsDictionary objectForKey:@"PreferenceSpecifiers"];
+
+    //loop thru prefs
+    NSDictionary *item;
+    for (item in preferencesArray) {
+        //get the key
+        NSString *keyValue = [item objectForKey:@"Key"];
+
+        //get the default
+        id defaultValue = [item objectForKey:@"DefaultValue"];
+
+        // if we have both, set in defaults
+        if (keyValue && defaultValue)
+            [standardUserDefaults setObject:defaultValue forKey:keyValue];
+
+        //get the file item if any - (recurse thru the other settings files)
+        NSString *fileValue = [item objectForKey:@"File"];
+        if (fileValue)
+            [AppDelegate setSettingsBundleDefaultsForFile:[fileValue stringByAppendingString:@".plist"]];
+
+    }
+    RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
+    [standardUserDefaults synchronize];
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+
+    if (nil == [preferences valueForKey:@"host_ip"]) {
+        [AppDelegate setSettingsBundleDefaults];
+    }
+
+    [[RKParserRegistry sharedRegistry] setParserClass:[RKXMLParserLibXML class] forMIMEType:@"application/xhtml+xml"];
+
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

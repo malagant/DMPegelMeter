@@ -15,22 +15,79 @@
 		CFA0FCB214CC5B6B00D13F6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA0FCB114CC5B6B00D13F6F /* AppDelegate.m */; };
 		CFA0FCB514CC5B6B00D13F6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA0FCB414CC5B6B00D13F6F /* ViewController.m */; };
 		CFA0FCB814CC5B6B00D13F6F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA0FCB614CC5B6B00D13F6F /* ViewController.xib */; };
+		CFA0FCD214CC5C3800D13F6F /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA0FCC914CC5BBD00D13F6F /* libRestKit.a */; };
+		CFA0FCD914CC5C3800D13F6F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA0FCD314CC5C3800D13F6F /* CFNetwork.framework */; };
+		CFA0FCDA14CC5C3800D13F6F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA0FCD414CC5C3800D13F6F /* CoreData.framework */; };
+		CFA0FCDB14CC5C3800D13F6F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA0FCD514CC5C3800D13F6F /* libxml2.dylib */; };
+		CFA0FCDC14CC5C3800D13F6F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA0FCD614CC5C3800D13F6F /* MobileCoreServices.framework */; };
+		CFA0FCDD14CC5C3800D13F6F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA0FCD714CC5C3800D13F6F /* Security.framework */; };
+		CFA0FCDE14CC5C3800D13F6F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA0FCD814CC5C3800D13F6F /* SystemConfiguration.framework */; };
+		CFA0FCE014CC5DAD00D13F6F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFA0FCDF14CC5DAD00D13F6F /* Settings.bundle */; };
+		CFA0FCEB14CC62F500D13F6F /* PegelMessung.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA0FCEA14CC62F500D13F6F /* PegelMessung.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFA0FCC814CC5BBD00D13F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA0FCBE14CC5BBC00D13F6F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		CFA0FCCA14CC5BBD00D13F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA0FCBE14CC5BBC00D13F6F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		CFA0FCCC14CC5BBD00D13F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA0FCBE14CC5BBC00D13F6F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		CFA0FCCE14CC5BBD00D13F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA0FCBE14CC5BBC00D13F6F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		CFA0FCD014CC5C0E00D13F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA0FCBE14CC5BBC00D13F6F /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CFA0FC9D14CC5B6B00D13F6F /* DMPegelMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMPegelMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA0FCA114CC5B6B00D13F6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CFA0FCA314CC5B6B00D13F6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CFA0FCA514CC5B6B00D13F6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CFA0FCA914CC5B6B00D13F6F /* DMPegelMeter-Info.plist */ = {isa = PBXFileReference; path = "DMPegelMeter-Info.plist"; sourceTree = "<group>"; };
+		CFA0FCA914CC5B6B00D13F6F /* DMPegelMeter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMPegelMeter-Info.plist"; sourceTree = "<group>"; };
 		CFA0FCAB14CC5B6B00D13F6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CFA0FCAD14CC5B6B00D13F6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CFA0FCAF14CC5B6B00D13F6F /* DMPegelMeter-Prefix.pch */ = {isa = PBXFileReference; path = "DMPegelMeter-Prefix.pch"; sourceTree = "<group>"; };
-		CFA0FCB014CC5B6B00D13F6F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFA0FCAF14CC5B6B00D13F6F /* DMPegelMeter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMPegelMeter-Prefix.pch"; sourceTree = "<group>"; };
+		CFA0FCB014CC5B6B00D13F6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFA0FCB114CC5B6B00D13F6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CFA0FCB314CC5B6B00D13F6F /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		CFA0FCB314CC5B6B00D13F6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CFA0FCB414CC5B6B00D13F6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CFA0FCB714CC5B6B00D13F6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CFA0FCBE14CC5BBC00D13F6F /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		CFA0FCD314CC5C3800D13F6F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CFA0FCD414CC5C3800D13F6F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CFA0FCD514CC5C3800D13F6F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		CFA0FCD614CC5C3800D13F6F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CFA0FCD714CC5C3800D13F6F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CFA0FCD814CC5C3800D13F6F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CFA0FCDF14CC5DAD00D13F6F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		CFA0FCE914CC62F500D13F6F /* PegelMessung.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PegelMessung.h; sourceTree = "<group>"; };
+		CFA0FCEA14CC62F500D13F6F /* PegelMessung.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PegelMessung.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +95,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA0FCD914CC5C3800D13F6F /* CFNetwork.framework in Frameworks */,
+				CFA0FCDA14CC5C3800D13F6F /* CoreData.framework in Frameworks */,
+				CFA0FCDB14CC5C3800D13F6F /* libxml2.dylib in Frameworks */,
+				CFA0FCDC14CC5C3800D13F6F /* MobileCoreServices.framework in Frameworks */,
+				CFA0FCDD14CC5C3800D13F6F /* Security.framework in Frameworks */,
+				CFA0FCDE14CC5C3800D13F6F /* SystemConfiguration.framework in Frameworks */,
+				CFA0FCD214CC5C3800D13F6F /* libRestKit.a in Frameworks */,
 				CFA0FCA214CC5B6B00D13F6F /* UIKit.framework in Frameworks */,
 				CFA0FCA414CC5B6B00D13F6F /* Foundation.framework in Frameworks */,
 				CFA0FCA614CC5B6B00D13F6F /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +114,13 @@
 		CFA0FC9214CC5B6B00D13F6F = {
 			isa = PBXGroup;
 			children = (
+				CFA0FCD314CC5C3800D13F6F /* CFNetwork.framework */,
+				CFA0FCD414CC5C3800D13F6F /* CoreData.framework */,
+				CFA0FCD514CC5C3800D13F6F /* libxml2.dylib */,
+				CFA0FCD614CC5C3800D13F6F /* MobileCoreServices.framework */,
+				CFA0FCD714CC5C3800D13F6F /* Security.framework */,
+				CFA0FCD814CC5C3800D13F6F /* SystemConfiguration.framework */,
+				CFA0FCBE14CC5BBC00D13F6F /* RestKit.xcodeproj */,
 				CFA0FCA714CC5B6B00D13F6F /* DMPegelMeter */,
 				CFA0FCA014CC5B6B00D13F6F /* Frameworks */,
 				CFA0FC9E14CC5B6B00D13F6F /* Products */,
@@ -82,7 +153,10 @@
 				CFA0FCB314CC5B6B00D13F6F /* ViewController.h */,
 				CFA0FCB414CC5B6B00D13F6F /* ViewController.m */,
 				CFA0FCB614CC5B6B00D13F6F /* ViewController.xib */,
+				CFA0FCDF14CC5DAD00D13F6F /* Settings.bundle */,
 				CFA0FCA814CC5B6B00D13F6F /* Supporting Files */,
+				CFA0FCE914CC62F500D13F6F /* PegelMessung.h */,
+				CFA0FCEA14CC62F500D13F6F /* PegelMessung.m */,
 			);
 			path = DMPegelMeter;
 			sourceTree = "<group>";
@@ -96,6 +170,17 @@
 				CFA0FCAF14CC5B6B00D13F6F /* DMPegelMeter-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFA0FCBF14CC5BBC00D13F6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFA0FCC914CC5BBD00D13F6F /* libRestKit.a */,
+				CFA0FCCB14CC5BBD00D13F6F /* RestKitTests.octest */,
+				CFA0FCCD14CC5BBD00D13F6F /* RestKit.framework */,
+				CFA0FCCF14CC5BBD00D13F6F /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +197,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CFA0FCD114CC5C0E00D13F6F /* PBXTargetDependency */,
 			);
 			name = DMPegelMeter;
 			productName = DMPegelMeter;
@@ -136,12 +222,49 @@
 			mainGroup = CFA0FC9214CC5B6B00D13F6F;
 			productRefGroup = CFA0FC9E14CC5B6B00D13F6F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CFA0FCBF14CC5BBC00D13F6F /* Products */;
+					ProjectRef = CFA0FCBE14CC5BBC00D13F6F /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CFA0FC9C14CC5B6B00D13F6F /* DMPegelMeter */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CFA0FCC914CC5BBD00D13F6F /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = CFA0FCC814CC5BBD00D13F6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFA0FCCB14CC5BBD00D13F6F /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = CFA0FCCA14CC5BBD00D13F6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFA0FCCD14CC5BBD00D13F6F /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = CFA0FCCC14CC5BBD00D13F6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFA0FCCF14CC5BBD00D13F6F /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = CFA0FCCE14CC5BBD00D13F6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CFA0FC9B14CC5B6B00D13F6F /* Resources */ = {
@@ -150,6 +273,7 @@
 			files = (
 				CFA0FCAC14CC5B6B00D13F6F /* InfoPlist.strings in Resources */,
 				CFA0FCB814CC5B6B00D13F6F /* ViewController.xib in Resources */,
+				CFA0FCE014CC5DAD00D13F6F /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,10 +287,19 @@
 				CFA0FCAE14CC5B6B00D13F6F /* main.m in Sources */,
 				CFA0FCB214CC5B6B00D13F6F /* AppDelegate.m in Sources */,
 				CFA0FCB514CC5B6B00D13F6F /* ViewController.m in Sources */,
+				CFA0FCEB14CC62F500D13F6F /* PegelMessung.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFA0FCD114CC5C0E00D13F6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = CFA0FCD014CC5C0E00D13F6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CFA0FCAA14CC5B6B00D13F6F /* InfoPlist.strings */ = {
@@ -238,8 +371,14 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DMPegelMeter/DMPegelMeter-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/RestKit/Build";
 				INFOPLIST_FILE = "DMPegelMeter/DMPegelMeter-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/RestKit/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -249,7 +388,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DMPegelMeter/DMPegelMeter-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/RestKit/Build";
 				INFOPLIST_FILE = "DMPegelMeter/DMPegelMeter-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +418,7 @@
 				CFA0FCBD14CC5B6B00D13F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
